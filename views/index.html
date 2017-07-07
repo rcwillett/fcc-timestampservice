@@ -16,7 +16,7 @@
         </p>
          <h2>Usage:</h2>
         <p>
-          Add "/(Your Unix or Natural Date)" to the end of the url for this page to receive a json object containing the unix and natural form of your input date. (See sample object below)<br />
+          Add "/(Your Unix or Natural Date)" to the end of the url for this page to receive a json object containing the unix and natural form of your input date. (See sample object below)<br /><br />
           {
           unix: (Unix Date of Input),
           natural: (Natural Date of Input)
@@ -24,7 +24,7 @@
           <br />
           <br />
           This endpoint accepts both unix times and a time in natural form. If an invalid time is entered the endpoint will return the json object with both parameters as null. Note that for inputting a time in natural form
-          one must input the day, then the month then the year (in that order). It is also necessary to have these numbers/strings space or comma separated.
+          one must input the day, then the month then the year (in that order). It is also necessary to have these numbers/strings space or comma separated. It should also be noted that only full english representations of months are accepted as strings for months by this endpoint.
         </p>
       </div>
    </body>
