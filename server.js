@@ -9,7 +9,7 @@ var fs = require('fs');
 var express = require('express');
 var path = require('path');
 var app = express();
-var monthMapArray = ["January", "Febraury", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+var monthMapArray = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
 
 if (!process.env.DISABLE_XORIGIN) {
   app.use(function(req, res, next) {
@@ -126,11 +126,12 @@ function getNaturalDate(dateInput, responseData){
           dateNumsStrings.splice(dateNums.indexOf(respYear), 1);
           respDay = dateNums[0];
           respMonth = dateNums[1] - 1;
-          respYear = dateNums[2];
                 
       }
     else{
-      return responseData;
+          respDay = dateNums[0];
+          respMonth = dateNums[1] - 1;
+          respYear = dateNums[2];
     }
 
   }
