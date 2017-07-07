@@ -1,1 +1,1 @@
-My implementation of the FCC Timestamp Service. Using Node.js and express.js see i
+My implementation of the FCC Timestamp Service. Using Node.js and express.js see index.html for more information
