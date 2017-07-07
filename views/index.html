@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+
+   <head>
+      <title>FCC Timestamp Service</title>
+      <link rel="shortcut icon" href="https://cdn.hyperdev.com/us-east-1%3A52a203ff-088b-420f-81be-45bf559d01b1%2Ffavicon.ico" type="image/x-icon"/>
+      <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" type="text/css">
+      <link href="/public/style.css" rel="stylesheet" type="text/css">
+   </head>
+
+   <body>
+      <div class="container">
+         <h1>Welcome to Ross' FCC Timestamp Service!</h1>
+        <p>
+        The purpose of this service is to provide both a unix and natural date to a user see the instructions below for how to use it
+        </p>
+         <h2>Usage:</h2>
+        <p>
+          Add "/(Your Unix or Natural Date)" to the end of the url for this page to receive a json object containing the unix and natural form of your input date. (See sample object below)<br />
+          {
+          unix: (Unix Date of Input),
+          natural: (Natural Date of Input)
+          }
+          <br />
+          <br />
+          This endpoint accepts both unix times and a time in natural form. If an invalid time is entered the endpoint will return the json object with both parameters as null. Note that for inputting a time in natural form
+          one must input the day, then the month then the year (in that order). It is also necessary to have these numbers/strings space or comma separated.
+        </p>
+      </div>
+   </body>
+
+</html>
